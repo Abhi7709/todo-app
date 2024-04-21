@@ -1,4 +1,4 @@
-import addIcon from './add-img.png';
+import addIcon from './components/TaskCard/add-img .png';
 import "./App.css";
 import React, { useEffect, useState } from 'react';
 import TaskCard from './components/TaskCard/TaskCard';
@@ -59,7 +59,7 @@ function App() {
         <div>
             <div className='container'>
                 <div className='box w-40 bg-dark-subtle mx-auto my-5 shadow px-4 rounded-5 border border-dark'>
-                    <h1 className='text-center m-2'>Todo App</h1><hr/>
+                    <h1 className='text-center m-2'>Todo App by Shrawani</h1><hr/>
                     <div className='task-container px-2'>
                         {
                             tasks.map((task, i)=>{
@@ -78,13 +78,13 @@ function App() {
                     <div className='input-container d-flex justify-content-between align-items-center px-1 m-2'>
                         <input type='text' 
                             placeholder='Add a new task' 
-                            className='py-2 px-3 rounded-5 border border-dark fs-5 w-100'
+                            className='py-2 px-3 rounded-2 border border-dark fs-5 w-100'
                             value={newTask}
                             onChange={(e)=>{
                                 setNewTask(e.target.value)
                             }}/>
 
-                        <select className='p-1 rounded-5 border border-dark w-30 ms-2'
+                        <select className='p-1 rounded-2 border border-dark w-30 ms-2'
                                 value={category}
                                 onChange={(e)=>{
                                     setCategory(e.target.value)
